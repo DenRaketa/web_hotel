@@ -36,7 +36,6 @@ body {
     line-height: 1;
     font-size: 0,875rem;
     font-weight: 500;
-    color: #252B42;
     font-family: Montserrat;
 
 }
@@ -46,55 +45,220 @@ body {
 }
 
 ._container {
-    max-width: 1046px;
+    max-width: 1170px;
     margin: 0px auto;
     padding: 0px 1rem;
     box-sizing: content-box;
 }
 
-$second-text-color: #737373;
+$text-color: #262729;
+$color-interaction: #EE685F;
+$color-accent: #2A90D9;
+$color-white: #fff;
 
 
-    // header
+
+    // -------------------header--------------------------------
 .header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    z-index: 50;
+    // position: absolute;
+    // width: 100%;
+    // top: 0;
+    // bottom: 0;
+    // z-index: 50;
    
     .header_container {
+        width: 100%;
         display: flex;
-        min-height: 6.5rem;
+        min-height: 2.43rem;
         align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0 ;
         
-
+   
         .header_logo {
             font-weight: 700;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            color: $color-accent;
+
+            span {
+                color: $color-interaction;
+            }
         }
 
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
 
         .header__menu {
-            margin: 0 0 0 8.31rem;
-            color: $second-text-color;
+            color: $text-color;
             font-weight: 600; 
                        
 
             .menu__list {
                 display: flex;
-                gap: 1.3rem;
+                gap: 2.5rem;
                 flex-wrap: wrap;
+                color: $text-color;
+               
+                .menu__link{
+                color: $text-color;
+                }
             }
 
         }
     
     }
+
+    .user_menu {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        
+     
+        .user_menu_block {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            
+            
+
+            .dollar,.language {
+                color: $color-interaction;
+                border-bottom: 2px dotted;
+
+
+            }
+
+        }
+        
+    }
     
 }
+
+// --------------------Hero------------------------//
+
 .hero {
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 70px;
+    background: url('./img/hero.jpg');
     background-size: cover;
+    height: calc(100vh - 220px);
+    border-radius: 20px;
+    
+    &__content {
+        width: 500px;
+        
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;    
+        }
+
+    p {
+        font-size: 24px;
+        font-weight: 500;
+    }
+        
+    }
 }
+.hero_search_block {
+    top:-30px;
+    padding: 16px;
+    display: flex;
+    z-index: 30;
+    margin: 0 auto;
+    width: 570px;
+    height: 70px;
+    border-radius: 36px;
+    background-color: $color-white;
+    justify-content: space-between;
+
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+    .location {
+        display: flex;
+        width: 185px;
+        // justify-content: center;
+        align-items: center;
+        height: 44px;
+        gap: 8px;
+
+       img {
+        width: 24px;
+        height: 24px;
+       }
+
+       h3{
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-color;
+       }
+
+       p {
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-color;
+        opacity: 0.5;
+
+       }
+
+    }   
+}
+.calendar {
+    border-left: 2px solid #EBEBEB;
+    padding-left: 20px;
+    display: flex;
+    width: 185px;
+    align-items: center;
+    height: 44px;
+    gap: 8px;
+
+    img {
+     width: 24px;
+     height: 24px;
+    }
+
+    h4{
+     font-size: 16px;
+     color: $text-color;
+     font-weight: 400;
+    }
+
+    p {
+     font-size: 16px;
+     color: $text-color;
+     opacity: 0.5;
+     font-weight: 400;
+
+    }
+
+ }
+ .search {
+    background: $color-white;
+ }
+ .search__circle {
+   display: flex;
+    width: 40px;
+    height: 40px;
+    background: $color-interaction;
+
+    border-radius: 50px;
+    color: $color-white;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    img {
+        width: 16px;
+        height: 16px;
+    } 
+ }
+
+
 
