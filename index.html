@@ -2,24 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-
+        rel="stylesheet" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>web hotel</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header_container _container">
+                <button class="menu__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <div class="header_container__left">
-
-                    <a class="header_logo" href="">Your<span>.logo</span></a>
+                    <div class="header_logo"> <img src="/img/assets/Your.logo.svg" alt="logo"></div>
 
                     <nav class="header__menu menu">
                         <ul class="menu__list">
@@ -38,64 +41,300 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="end">
-                    <div class="user_menu">
-                        <div class="user_menu_block">
-                            <a href="/" class="dollar">$</a>
-                        </div>
-                        <div class="user_menu_block">
-                            <a href="/" class="language">EN</a>
-                        </div>
-                        <div class="user_menu_block">
-                            <img src=".//img/icons/profile.svg" alt="my profile" class="my_profile">
-                        </div>
-                    </div>
+                <div class="header__right">
+                    <button class="currency _selector"> <span>$</span></button>
+                    <button class="language _selector"> <span> EN</span></button>
+                    <button class="profile _selector">
+                        <img src=".//img/icons/profile.svg" alt="my profile" class="my_profile">
+                    </button>
                 </div>
-
             </div>
+    </div>
+    </header>
 
-        </header>
-
-        <section class="hero _container">
+    <section class="hero_section _container">
+        <div class="hero">
             <div class="hero__content">
                 <h1>Find an apartment for your vacation</h1>
-                <p>We have several thousand apartments for every taste in every corner of the globe</p>
+                <p>
+                    We have several thousand apartments for every taste in every
+                    corner of the globe
+                </p>
             </div>
-        </section>
-
-        <div class="hero_search_block">
+        </div>
+        <div class="hero_action_block">
             <div class="location">
                 <img src=".//img/icons/location.svg" alt="icon_location">
                 <div>
                     <h3>Where</h3>
-                    <p>Search Destination</p>
+                    <input type="text" placeholder="Search Destination">
+
                 </div>
             </div>
             <div class="calendar">
                 <img src=".//img/icons/calendar.svg" alt="icon_calendar">
+
                 <div>
-                    <h4>When</h4>
-                    <p>Select Date</p>
+                    <h3>When</h3>
+                    <input type="text" placeholder="Select Date">
                 </div>
             </div>
-            <button class="search">
+            <button class="search_button">
                 <div class="search__circle">
-                    <img src=".//img/icons/search.svg" alt="icon_search">
+                    <img src=".//img/icons/search1.svg" alt="icon_search">
                 </div>
             </button>
+        </div>
+    </section>
+    <section class="section_about_us">
+        <h2>
+            Why Choose Us
+        </h2>
+        <p>
+            The main reason is because our competitors have disgusting sites, but we can' t write that here, so the text
+            here will be different
+        </p>
 
+        <div class="info_cards _container">
+            <div class="adveteges">
+                <div class="cirle_icon">
+                    <img src="/img/icons/payment.svg" alt="credit-card">
+                </div>
+                <h3>
+                    Payment methods
+                </h3>
+                <p>
+                    We have a lot of them, from cryptocurrencies to barter for potatoes
+                </p>
+            </div>
+            <div class="adveteges">
+                <div class="cirle_icon">
+                    <img src="/img/icons/search2.svg" alt="search">
+                </div>
+                <h3>
+                    Simple search process
+                </h3>
+                <p>
+                    We checked it out, even the kid did it, but it was my mom's friend's son
+                </p>
+            </div>
+            <div class="adveteges">
+                <div class="cirle_icon">
+                    <img src="/img/icons/support.svg" alt="support">
+                </div>
+                <h3>
+                    24/7 Support
+                </h3>
+                <p>
+                    Is there something you don't understand? Feel free to call us. Phone number in the footer
+                </p>
+            </div>
+            <div class="adveteges">
+                <div class="cirle_icon">
+                    <img src="/img/icons/nice.svg" alt="cat">
+                </div>
+                <h3>
+                    We are nice
+                </h3>
+                <p>
+                    Fantasy is over, there will be something really convincing here </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="special_offers__section  _container">
+        <div class="special_offers_block">
+            <h2>
+                Special_offers
+            </h2>
+            <div class="hotel_room__container">
+                <div class="hotel_room__block">
+                    <div class="hotel_room__item">
+                        <div class="hotel_room_picture"
+                            style="background: url(/img/assets/hotel-numbers/Rectangle\ 9\ \(1\).jpg);">
+                            <div class="rating_block">
+                                <button class="stars-rating">
+                                    <img src="/img/icons/Star 1.svg" alt="star">
+                                    <span>4.8</span>
+                                </button>
+                                <button class="favorite-button">
+                                    <img src="/img/icons/icon-favorite.svg" alt="favorite">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hotel_room__title__block">
+                            <a href="">
+                                <div class="hotel_room__title">
+                                    <span class="hotel_room__name">
+                                        Wilderness Club at Big Ceddar
+                                    </span>
+                                    <div class="hotel_room__convenience">
+                                        2 Bedroom Combined Lodge
+                                    </div>
+                                    <div class="hotel_room__booking">
+                                        28 October — 1 November
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="hotel_room__price">
+                                <span class="hotel_room__price__cost">
+                                    $2016
+                                </span>
+                                <span class="hotel_room__price__night">
+                                    /6 night
+                                </span>
+                            </div>
+                            <div class="hotel_room__parameter">
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/doble bed iacon.svg" alt="beds">
+                                    <span>4 Beds</span>
+                                </div>
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/person.svg" alt="Sleeps">
+                                    <span>8 Sleeps</span>
+                                </div>
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/scale.svg" alt="area">
+                                    <span>1,350 Sq Ft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel_room__block">
+                    <div class="hotel_room__item">
+                        <div class="hotel_room_picture" style="background: url(/img/assets/hotel-numbers/room2\ .jpg);">
+                            <div class="rating_block">
+                                <button class="stars-rating">
+                                    <img src="/img/icons/Star 1.svg" alt="star">
+                                    <span>4.8</span>
+                                </button>
+                                <button class="favorite-button">
+                                    <img src="/img/icons/icon-favorite.svg" alt="favorite">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hotel_room__title__block">
+                            <a href="">
+                                <div class="hotel_room__title">
+                                    <span class="hotel_room__name">
+                                        Wilderness Club at Big Ceddar
+                                    </span>
+                                    <div class="hotel_room__convenience">
+                                        2 Bedroom Combined Lodge
+                                    </div>
+                                    <div class="hotel_room__booking">
+                                        28 October — 1 November
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="hotel_room__price">
+                                <span class="hotel_room__price__cost">
+                                    $2016
+                                </span>
+                                <span class="hotel_room__price__night">
+                                    /6 night
+                                </span>
+                            </div>
+                            <div class="hotel_room__parameter">
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/doble bed iacon.svg" alt="beds">
+                                    <span>4 Beds</span>
+                                </div>
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/person.svg" alt="Sleeps">
+                                    <span>8 Sleeps</span>
+                                </div>
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/scale.svg" alt="area">
+                                    <span>1,350 Sq Ft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel_room__block">
+                    <div class="hotel_room__item">
+                        <div class="hotel_room_picture" style="background: url(/img/assets/hotel-numbers/room3\ .jpg);">
+                            <div class="rating_block">
+                                <button class="stars-rating">
+                                    <img src="/img/icons/Star 1.svg" alt="star">
+                                    <span>4.8</span>
+                                </button>
+                                <button class="favorite-button">
+                                    <img src="/img/icons/icon-favorite.svg" alt="favorite">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hotel_room__title__block">
+                            <a href="">
+                                <div class="hotel_room__title">
+                                    <span class="hotel_room__name">
+                                        Wilderness Club at Big Ceddar
+                                    </span>
+                                    <div class="hotel_room__convenience">
+                                        2 Bedroom Combined Lodge
+                                    </div>
+                                    <div class="hotel_room__booking">
+                                        28 October — 1 November
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="hotel_room__price">
+                                <span class="hotel_room__price__cost">
+                                    $2016
+                                </span>
+                                <span class="hotel_room__price__night">
+                                    /6 night
+                                </span>
+                            </div>
+                            <div class="hotel_room__parameter">
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/doble bed iacon.svg" alt="beds">
+                                    <span>4 Beds</span>
+                                </div>
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/person.svg" alt="Sleeps">
+                                    <span>8 Sleeps</span>
+                                </div>
+                                <div class="hotel_room__parameter__item">
+                                    <img src="/img/icons/scale.svg" alt="area">
+                                    <span>1,350 Sq Ft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+    </section>
+    <section class="reviews_section">
+        <h2>
+            Reviews
+        </h2>
+        <div class="reviews__container">
+            <button class="reviews_btn__back">
+            </button>
+            <div class="reviews__block">
+                <div class="reviews__avtatar">
+                    <img src="/img/assets/avatars/Ellipse 6.jpg" alt="avatar">
+                </div>
+                <div class="reviews__description">
+                    <p>
+                        I quickly found the right tour for me, but I had a few questions about the hotel, I wrote to
+                        tech support and they answered all my questions within an hour. The vacation itself was perfect.
+                        Thank you very much. I will come back again and again.
+                    </p>
+                </div>
+                <div class="reviews__author__block">
+                    <span>Jannike Borg,</span>
+                    <span>Publisher</span>
+                </div>
+            </div>
+        </div>
 
-
-
-
-    </div>
-    </main>
-    </div>
-
-
-
+    </section>
 </body>
 
 </html>

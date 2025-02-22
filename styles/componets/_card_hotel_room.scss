@@ -1,0 +1,125 @@
+@import '../variables';
+
+.hotel_room__block {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px;
+    
+    border: 1px solid $color-gray-300;
+    border-radius: 12px;
+
+
+    .hotel_room_picture {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 220px;
+        border-radius: 12px;
+        padding: 8px;
+        margin-bottom: 24px;
+
+
+        .rating_block {
+            display: flex;
+            justify-content: space-between;
+
+            .stars-rating {
+                border: none;
+                padding: auto 8px;
+
+                background-color: rgba(255, 255, 255, 0.8);
+                
+                width: 72px;
+                height: 32px;
+
+                border-radius: 8px;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: montserrat;
+                }                
+            }
+
+            .favorite-button{
+                border: none;
+                // padding: auto 4px;
+
+                background-color: rgba(255, 255, 255, 0.8);
+
+                width: 32px;
+                height: 32px;
+
+                border-radius: 50px;
+            }
+
+        }
+    
+
+
+    }
+
+    
+    .hotel_room__title__block {
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .hotel_room__title {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            
+            .hotel_room__name {
+                
+                font-size: 22px;
+                font-weight: 500;
+            
+            }
+    
+            .hotel_room__convenience {
+    
+                color: $color-gray-700;
+            }
+            .hotel_room__booking {
+                font-size: 18px;
+            }
+      
+    }
+    
+    .hotel_room__price {
+    
+        .hotel_room__price__cost {
+            font-size: 28px;
+            font-weight: 500;
+    
+            color: $color-accent;
+    
+        }
+    
+        .hotel_room__price__night {
+            color: $color-accent;
+        }
+    }
+    
+    .hotel_room__parameter {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        
+        
+    &__item {
+        display: flex;
+        align-items: center;  
+        gap: 8px;
+    }
+    }
+
+
+    }
+
+ 
+}

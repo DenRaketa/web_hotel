@@ -1,0 +1,24 @@
+
+.special_offers__section {
+
+    .special_offers_block{
+        
+        padding: 100px 0px;
+        
+        h2 {
+            
+            font-weight: 600;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        
+        .hotel_room__container {
+            display: flex;
+            justify-content:space-around;
+            
+            
+        }
+    }
+}

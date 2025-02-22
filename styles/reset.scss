@@ -1,0 +1,54 @@
+@import 'variables';
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    line-height: 1;
+    font-weight: 500;
+    font-family: Montserrat;
+
+}
+
+
+._container {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 3rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
