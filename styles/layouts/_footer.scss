@@ -1,0 +1,120 @@
+@import '../variables';
+
+.footer {
+    background-color: $color-gray-200;
+    padding: 60px 0 20px 0;
+
+    .footer_wrapper{
+
+
+
+
+        .footer_wrapper__top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 52px;
+            border-bottom: 1px solid $color-gray-800;
+
+            .footer_title_of_section__block {
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 16px;
+
+                }
+            }
+
+            .footer__newsletter {
+
+
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 16px;
+
+                    margin-bottom: 20px;
+
+                }
+
+                &__block {
+
+                    position: relative;
+
+                    form {
+                        margin-bottom: 8px;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+
+                &__input {
+
+                    background-color: $color-white;
+                    border-radius: 10px;
+                    border: 1px solid $color-interaction;
+
+                    width: 20vw;
+                    height: 40px;
+
+                    &__button {
+                        position: absolute;
+                        left: calc(20vw - 40px);
+                        width: 40px;
+                        height: 40px;
+                        background-color: $color-interaction;
+                        border-radius: 0px 10px 10px 0px;
+
+                        &__button:hover {
+                            cursor: pointer;
+
+
+                        }
+                    }
+                }
+            }
+        }
+        .footer_wrapper__botton {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0px;
+
+            height: 40px;
+
+            .page_autor_container {
+
+                font-size: 14px;
+                font-weight: 400;
+
+                span:last-child {
+                    font-weight: 600;
+                    color: $color-accent;
+                    text-decoration: underline;
+
+                }
+
+            }
+
+            .soc-media_container {
+                display: flex;
+                gap: 12px;
+
+                .soc-media_item {
+                    display: block;
+
+                    width: 24px;
+                    height: 24px;
+                  
+                }
+
+
+            }
+        }
+
+    }
+
+}

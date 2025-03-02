@@ -1,1 +1,91 @@
-@import '../variables.scss'
+@import '../variables';
+
+
+h2 {
+    display: block;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 60px;
+
+}
+
+
+
+.reviews__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;   
+   
+
+
+    .reviews__btn__back {   
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 10px;
+        background-color: $color-gray-300;
+    }
+
+    .reviews__block {
+        font-weight: 400;
+        font-size: 16px;
+
+
+        .reviews__avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+
+            margin: 0 auto;
+
+            margin-bottom: 24px;
+        }
+
+        .reviews__author__block {
+
+            font-style: italic;
+
+            margin-top: 16px;
+
+            span:first-child {
+                font-weight: 600;
+
+            }
+
+        }
+
+    }
+
+
+    .reviews__btn__next {
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 10px;
+        background-color: $color-interaction;
+
+        img {
+            mask-image: url(/img/icons/arrow.svg);
+            rotate: 180deg;
+        }
+    }
+
+
+}
+
+.reviews__btn__more {
+    display: block;
+    color: $color-white;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: montserrat;
+    
+    background-color: $color-interaction;
+    border-radius: 10px;
+
+    padding: 16px 80px;
+    margin: 48px auto;
+}

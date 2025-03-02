@@ -1,0 +1,95 @@
+@import '../variables.scss';
+
+
+.posts__container {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+
+    .post__block {
+        height: fit-content;
+        // width: fit-content;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 370px;
+        // height: 252px;
+
+        &__picture {
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+
+            // width: 370px;
+            height: 252px;
+
+            margin-bottom: 24px;
+        }
+
+        &__text_content {
+
+            .post__datetime__block {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 12px;
+
+                column-gap: 12px;
+
+                font-size: 14px;
+                font-weight: 400;
+
+                .time__block {
+                    color: $color-accent;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
+                .time__block::before {
+                    content: "";
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background-color: $color-accent;
+                    /* Колір іконки */
+
+                    -webkit-mask-image: url('/img/icons/time.svg');
+                    /* Маска для Safari */
+                    mask-image: url('/img/icons/time.svg');
+                    /* Маска для інших браузерів */
+                    -webkit-mask-repeat: no-repeat;
+                    mask-repeat: no-repeat;
+                    -webkit-mask-size: contain;
+                    mask-size: contain;
+                    margin-right: 8px;
+
+                }
+            }
+
+            .post__title__block {
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-weight: 400;
+                }
+
+            }
+
+
+        }
+
+    }
+
+
+}

@@ -18,6 +18,7 @@ ol,
 ul,
 li {
     list-style: none;
+    color: $text-color;
 }
 
 img {
@@ -32,13 +33,23 @@ h3,
 h4 {
     font-weight: inherit;
     font-size: inherit;
+    color: $text-color;
+}
+
+p,
+span
+    {
+    color: $text-color;
 }
 
 html,
 body {
-    line-height: 1;
+    line-height: 1.25;
     font-weight: 500;
     font-family: Montserrat;
+    
+
+
 
 }
 
@@ -48,6 +59,8 @@ body {
     margin: 0px auto;
     padding: 0px 3rem;
 }
+
+
 
 button:hover {
     cursor: pointer;
